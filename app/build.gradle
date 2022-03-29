@@ -3,7 +3,7 @@ apply plugin: 'com.google.gms.google-services'
 //apply plugin: 'com.google.gms.google-services'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 31
     buildToolsVersion "30.0.2"
     aaptOptions {
         noCompress "tflite"  // Your model's file extension: "tflite", "lite", etc.
@@ -40,6 +40,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-vision-image-label-model:20.0.2'
 
     implementation 'androidx.wear:wear:1.0.0'
+    implementation 'com.google.android.material:material:1.5.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
